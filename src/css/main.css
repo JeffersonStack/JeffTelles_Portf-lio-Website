@@ -7,6 +7,7 @@
     --text-primary: 'Open Sans', sans-serif;
     --text-secondary: 'Montserrat', sans-serif;
     --bg-color: rgb(223, 223, 223);
+    --bx-shadow: 1px 1px 3px rgba(0,0,0,0.8);
 }
 
 * {
@@ -27,7 +28,7 @@ body {
 .header {
     background-color: #333;
     color: #fff;
-    box-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+    box-shadow: var(--bx-shadow);
 }
 
 .container {
@@ -66,12 +67,38 @@ body {
     width: 0;
     height: 100vh;
     background-color: #333;
-    box-shadow: 2px 4px 4px rgba(255,255,255,0.6);
+    box-shadow: var(--bx-shadow);
     z-index: -1;
 
     transition: all 0.5s ease-in;
+    padding-top: 4rem;
 }
 
 .mobile-show {
     width: 350px;
+    transition: all 0.5s ease-in;
+}
+
+/* 
+    @Mobile Links
+*/
+.mobile-links {
+    list-style: none;
+    transform: translateX(-350px);
+}
+
+.show-links {
+    transform: translateX(25px);
+    transition: all 0.5s ease-in-out;
+}
+
+.mobile-links li {
+    padding-bottom: 1.2rem;
+}
+
+.mobile-links a {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
 }
