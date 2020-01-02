@@ -1,0 +1,23 @@
+/* 
+    @reset css
+    @created custom variables
+    @BEM
+*/
+
+:root {
+    --text-primary: 'Open Sans', sans-serif;
+    --text-secondary: 'Montserrat', sans-serif;
+    --bg-color: rgb(223, 223, 223);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--text-primary);
+    font-size: 90.0%;
+    background-color: var(--bg-color);
+}
