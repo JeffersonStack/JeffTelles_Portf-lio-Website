@@ -56,7 +56,7 @@ body {
 }
 
 .header .header-nav .fas {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 /*
@@ -87,18 +87,45 @@ body {
     transform: translateX(-350px);
 }
 
+.mobile-icons {
+    transform: translateX(-350px);
+    list-style: none;
+    display: flex;
+}
+
+.mobile-icons .fab {
+    font-size: 2rem;
+    color: #fff;
+    margin-right: 1rem;
+}
+
 .show-links {
     transform: translateX(25px);
     transition: all 0.5s ease-in-out;
 }
 
-.mobile-links li {
+.nav-item {
     padding-bottom: 1.2rem;
 }
 
-.mobile-links a {
+.nav-link {
     font-size: 1.2rem;
     text-transform: uppercase;
     text-decoration: none;
     color: #fff;
+}
+
+/* 
+    @Mobile Links Hover Efect
+    @Mobile Icons Hover Efect
+*/
+.nav-link:hover {
+    /* border-bottom: 1px solid #fff; */
+    transition: all 0.3s ease-in;
+    color: rgba(255, 255, 255, 0.514);
+}
+
+.mobile-icons .fab:hover {
+    transition: all 0.3s ease-in;
+    color: rgba(255, 255, 255, 0.514);
 }
