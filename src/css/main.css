@@ -7,6 +7,7 @@
     --text-primary: 'Open Sans', sans-serif;
     --text-secondary: 'Montserrat', sans-serif;
     --bg-color: rgb(223, 223, 223);
+    --color-principal: #333;
     --bx-shadow: 1px 1px 3px rgba(0,0,0,0.8);
 }
 
@@ -22,8 +23,14 @@ body {
     background-color: var(--bg-color);
 }
 
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
 /*
     @Header
+    @Logo
 */
 .header {
     background-color: #333;
@@ -61,17 +68,18 @@ body {
 
 /*
     @Menu Mobile
-    @show Mobile
+    @Transition Menu
+    @Efect Links1
 */
+
 .mobile {
+    position: fixed;
     width: 0;
     height: 100vh;
-    background-color: #333;
+    background-color: var(--color-principal);
     box-shadow: var(--bx-shadow);
-    z-index: -1;
-
     transition: all 0.5s ease-in;
-    padding-top: 4rem;
+    z-index: -1;
 }
 
 .mobile-show {
@@ -80,52 +88,8 @@ body {
 }
 
 /* 
-    @Mobile Links
+    @Main Content
 */
-.mobile-links {
-    list-style: none;
-    transform: translateX(-350px);
-}
-
-.mobile-icons {
-    transform: translateX(-350px);
-    list-style: none;
-    display: flex;
-}
-
-.mobile-icons .fab {
-    font-size: 2rem;
-    color: #fff;
-    margin-right: 1rem;
-}
-
-.show-links {
-    transform: translateX(25px);
-    transition: all 0.5s ease-in-out;
-}
-
-.nav-item {
-    padding-bottom: 1.2rem;
-}
-
-.nav-link {
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #fff;
-}
-
-/* 
-    @Mobile Links Hover Efect
-    @Mobile Icons Hover Efect
-*/
-.nav-link:hover {
-    /* border-bottom: 1px solid #fff; */
-    transition: all 0.3s ease-in;
-    color: rgba(255, 255, 255, 0.514);
-}
-
-.mobile-icons .fab:hover {
-    transition: all 0.3s ease-in;
-    color: rgba(255, 255, 255, 0.514);
+main {
+    z-index: 100;
 }
