@@ -79,7 +79,15 @@ a {
     background-color: var(--color-principal);
     box-shadow: var(--bx-shadow);
     transition: all 0.5s ease-in;
-    z-index: -1;
+    z-index: 1;
+}
+
+.mobile-links {
+    transform: translateX(-350px);
+}
+
+.mobile-icons {
+    transform: translateX(-350px);
 }
 
 .mobile-show {
@@ -91,5 +99,5 @@ a {
     @Main Content
 */
 main {
-    z-index: 100;
+    z-index: -1;
 }
