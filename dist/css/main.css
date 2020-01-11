@@ -1,10 +1,27 @@
+.container {
+  width: 90%;
+  margin: auto; }
+
+.mobile {
+  display: none; }
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0; }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 1.7;
-  background: #444;
+  background: #3f3f3f;
   color: #fff; }
+
+.header {
+  background: #262626; }
+  .header .header-navbar {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .header .header-logo {
+    font-family: "Montserrat", sans-serif; }

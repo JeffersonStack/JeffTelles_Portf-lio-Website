@@ -1,3 +1,6 @@
 // Import Files SCSS
 @import "./utils/var";
-@import "./config/config.scss";
+@import "./utils/base";
+@import "./components/mobile";
+@import "./config/config";
+@import "./layout/header";

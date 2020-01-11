@@ -1,0 +1,17 @@
+.header {
+  background: $color-base-dark;
+  // Navbar
+  .header-navbar {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  // Logo
+  .header-logo {
+    font-family: $font-custom;
+  }
+
+  // Nav
+}

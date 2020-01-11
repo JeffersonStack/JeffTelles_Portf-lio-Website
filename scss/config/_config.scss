@@ -6,8 +6,8 @@
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: $font-base;
   line-height: 1.7;
-  background: $primary-color;
+  background: $color-base;
   color: $color-light;
 }
