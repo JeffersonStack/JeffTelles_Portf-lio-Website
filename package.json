@@ -1,0 +1,22 @@
+{
+  "name": "jefftelles",
+  "version": "1.0.0",
+  "description": "Portfolio Profissional",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JeffersonStack/JeffTelles_Portf-lio-Website.git"
+  },
+  "author": "Jefferson Teles",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JeffersonStack/JeffTelles_Portf-lio-Website/issues"
+  },
+  "homepage": "https://github.com/JeffersonStack/JeffTelles_Portf-lio-Website#readme",
+  "dependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
