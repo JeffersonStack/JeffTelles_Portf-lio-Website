@@ -2,8 +2,22 @@
   width: 90%;
   margin: auto; }
 
-.mobile {
+.mobile-btn {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  z-index: 3; }
+  .mobile-btn .btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 5px 0 5px 0;
+    background: #fff; }
+
+.mobile-navbar {
   display: none; }
+
+.show {
+  display: block; }
 
 * {
   box-sizing: border-box;

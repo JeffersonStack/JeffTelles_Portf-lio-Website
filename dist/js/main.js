@@ -1,14 +1,19 @@
-// (function () {
-//     // DOM
-//     let menuBar = document.querySelector('#menuBar');
-//     let menuMobile = document.querySelector('#menuMobile');
-//     let menuLinks = document.querySelector('.mobile-links');
-//     let menuIcons = document.querySelector('.mobile-icons');
+(function(doc) {
+  "use strict";
+  // Select DOM
+  let menuBar = doc.querySelector(".mobile-btn");
+  let menuMobile = doc.querySelector(".mobile-navbar");
+  let openNavbar = false;
 
-//     menuBar.addEventListener('click', function () {
-//         // add class css to button
-//         menuMobile.classList.toggle('mobile-show');
-//         menuLinks.classList.toggle('show-links');
-//         menuIcons.classList.toggle('show-links');
-//     }, false)
-// })()
+  menuBar.addEventListener("click", toggleMenu);
+
+  function toggleMenu() {
+    if (!openNavbar) {
+      menuMobile.classList.add("show");
+      openNavbar = true;
+    } else {
+      menuMobile.classList.remove("show");
+      openNavbar = false;
+    }
+  }
+})(document);

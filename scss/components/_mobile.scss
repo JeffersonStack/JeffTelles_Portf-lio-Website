@@ -1,4 +1,23 @@
+// Menu Button
+.mobile-btn {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  z-index: 3;
+
+  .btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 5px 0 5px 0;
+    background: #fff;
+  }
+}
+
 // Mobile Style
-.mobile {
+.mobile-navbar {
   display: none;
+}
+
+.show {
+  display: block;
 }
