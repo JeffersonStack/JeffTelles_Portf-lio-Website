@@ -36,16 +36,18 @@
 
 // Mobile Window Style
 .mobile-navbar {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   visibility: hidden;
-  width: 350px;
+  overflow-x: hidden;
+  width: 320px;
   height: 100vh;
-  background: $color-base-dark;
-  transform: translateX(-350px);
+  background-image: linear-gradient(180deg, $color-base, $color-base-dark);
+  box-shadow: 2px 2px 3px rgba($color-dark, 0.3);
+  transform: translateX(-320px);
   transition: all 0.5s ease-in;
-  z-index: 2;
+  z-index: -1;
 }
 
 .show {

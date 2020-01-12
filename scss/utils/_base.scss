@@ -1,5 +1,10 @@
 // Base do layout do projeto
 .container {
-  width: 90%;
+  width: 80%;
   margin: auto;
+}
+
+.layout-left {
+  transform: translateX(315px);
+  transition: all 0.5s ease-in;
 }

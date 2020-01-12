@@ -1,7 +1,7 @@
 .header {
-  background: $color-base-dark;
-  box-shadow: 2px 2px 3px $color-base;
-  z-index: 3;
+  background: $color-base;
+  box-shadow: 2px 2px 3px rgba($color-dark, 0.3);
+  z-index: 4;
   // Navbar
   .header-navbar {
     height: 100px;
@@ -13,7 +13,8 @@
   // Logo
   .header-logo {
     font-family: $font-custom;
-    color: skyblue;
+    font-size: 1.4rem;
+    color: $color-dark;
   }
 
   // Nav

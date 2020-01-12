@@ -1,6 +1,10 @@
 .container {
-  width: 90%;
+  width: 80%;
   margin: auto; }
+
+.layout-left {
+  transform: translateX(315px);
+  transition: all 0.5s ease-in; }
 
 .menu-btn {
   cursor: pointer;
@@ -21,16 +25,18 @@
       transform: rotate(-45deg) translate(6px, -6px); }
 
 .mobile-navbar {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   visibility: hidden;
-  width: 350px;
+  overflow-x: hidden;
+  width: 320px;
   height: 100vh;
-  background: #262626;
-  transform: translateX(-350px);
+  background-image: linear-gradient(180deg, #22556e, #153641);
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  transform: translateX(-320px);
   transition: all 0.5s ease-in;
-  z-index: 2; }
+  z-index: -1; }
 
 .show {
   visibility: visible;
@@ -47,14 +53,15 @@ body {
   line-height: 1.7; }
 
 .header {
-  background: #262626;
-  box-shadow: 2px 2px 3px #3f3f3f;
-  z-index: 3; }
+  background: #22556e;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  z-index: 4; }
   .header .header-navbar {
     height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center; }
   .header .header-logo {
-    font-family: "Montserrat", sans-serif;
-    color: skyblue; }
+    font-family: "Pacifico", cursive;
+    font-size: 1.4rem;
+    color: #000; }
