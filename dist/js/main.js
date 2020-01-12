@@ -1,17 +1,19 @@
 (function(doc) {
   "use strict";
   // Select DOM
-  let menuBar = doc.querySelector(".mobile-btn");
+  let menuBtn = doc.querySelector(".menu-btn");
   let menuMobile = doc.querySelector(".mobile-navbar");
   let openNavbar = false;
 
-  menuBar.addEventListener("click", toggleMenu);
+  menuBtn.addEventListener("click", toggleMenu);
 
   function toggleMenu() {
     if (!openNavbar) {
+      menuBtn.classList.add("close");
       menuMobile.classList.add("show");
       openNavbar = true;
     } else {
+      menuBtn.classList.remove("close");
       menuMobile.classList.remove("show");
       openNavbar = false;
     }
