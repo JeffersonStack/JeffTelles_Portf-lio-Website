@@ -1,10 +1,6 @@
 .container {
-  width: 80%;
+  width: 90%;
   margin: auto; }
-
-.layout-left {
-  transform: translateX(315px);
-  transition: all 0.5s ease-in; }
 
 .menu-btn {
   cursor: pointer;
@@ -36,12 +32,25 @@
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
   transform: translateX(-320px);
   transition: all 0.5s ease-in;
-  z-index: -1; }
+  z-index: 1; }
 
 .show {
   visibility: visible;
   transform: translateX(0px);
   transition: all 0.5s ease-in; }
+
+.mobile-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center; }
+  .mobile-links .nav-link {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: none; }
 
 * {
   box-sizing: border-box;
