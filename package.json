@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/JeffersonStack/JeffTelles_Portf-lio-Website#readme",
   "dependencies": {
-    "node-sass": "^4.13.0"
+    "node-sass": "^4.13.1"
   }
 }
